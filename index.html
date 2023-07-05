@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <h1>Etch-A-Sketch</h1>
+    <div id="color-container">
+      <div id="black">Black</div>
+      <div id="rainbow">Rainbow</div>
+      <input id="color" type="color" value="#00ff00">
+      <div id="white">Erase</div>
+      <div id="reset">Reset</div>
+    </div>
+    <input id="grid-size" type="range" placeholder="Grid size" min="2" max="100" value="50">
+    <span id="range-value">50</span>
+    <div class="main-div"></div>
+    <script src="./main.js"></script>
+  </body>
+</html>

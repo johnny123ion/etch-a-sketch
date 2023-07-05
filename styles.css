@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0;
+  background-color: #ededed;
+}
+
+.main-div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 600px;
+  box-shadow: 0 0 10px 5px gray;
+}
+
+#color-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 5rem;
+  gap: 3rem;
+  align-items: center;
+} 
+
+#color-container > * {
+  flex: 0 0 auto;
+  padding: 0.5rem 1rem;
+  border: 1px solid black;
+  font-weight: bold;
+}
+
+#color-container > #color {
+  padding: 0;
+  width: 100px;
+  height: 4.5rem;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+span {
+  font-size: 3rem;
+}
+
+#black {
+  color: white;
+  background-color: black;
+}
+
+#rainbow {
+  color: white;
+  background: linear-gradient(to right, red, orange, yellow, greenyellow, deepskyblue, blue);
+  text-shadow: 0px 0px 5px black;
+}
+
+#white {
+  color: black;
+  background-color: white;
+}
+
+#reset {
+  color: white;
+  background-color: red;
+  text-shadow: 0px 0px 5px black;
+}
+
+#black, #rainbow, #color, #white, #reset {
+  cursor: pointer;
+}
+
+#black:hover, #rainbow:hover, #color:hover, #white:hover, #reset:hover {
+  opacity: 75%;
+}
