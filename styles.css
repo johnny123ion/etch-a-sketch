@@ -20,8 +20,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  width: 600px;
-  box-shadow: 0 0 10px 5px gray;
+  width: 60rem;
+  box-shadow: 0 0 1rem 0.5rem gray;
 }
 
 #color-container {
@@ -35,13 +35,13 @@ body {
 #color-container > * {
   flex: 0 0 auto;
   padding: 0.5rem 1rem;
-  border: 1px solid black;
+  border: 0.1rem solid black;
   font-weight: bold;
 }
 
 #color-container > #color {
   padding: 0;
-  width: 100px;
+  width: 10rem;
   height: 4.5rem;
 }
 
@@ -61,7 +61,7 @@ span {
 #rainbow {
   color: white;
   background: linear-gradient(to right, red, orange, yellow, greenyellow, deepskyblue, blue);
-  text-shadow: 0px 0px 5px black;
+  text-shadow: 0 0 0.5rem black;
 }
 
 #white {
@@ -72,7 +72,7 @@ span {
 #reset {
   color: white;
   background-color: red;
-  text-shadow: 0px 0px 5px black;
+  text-shadow: 0px 0px 0.5rem black;
 }
 
 #black, #rainbow, #color, #white, #reset {
@@ -81,4 +81,32 @@ span {
 
 #black:hover, #rainbow:hover, #color:hover, #white:hover, #reset:hover {
   opacity: 75%;
+}
+
+@media (max-width: 700px) {
+  * {
+    font-size: 31.25%;
+  }
+
+  #color-container {
+    display: flex;
+    font-size: 10rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+    width: 50rem;
+  } 
+  
+  #color-container > * {
+    flex: 1 1 25%;
+    padding: 0.5rem 1rem;
+    border: 0.1rem solid black;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  #color-container > #color {
+    padding: 0;
+    width: 10rem;
+    height: 5rem;
+  }
 }
